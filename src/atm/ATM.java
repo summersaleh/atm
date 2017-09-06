@@ -10,6 +10,15 @@ public class ATM {
 		balance += amount;
 	}
 	
+	void withdraw(double amount) {
+		balance -= amount;
+	}
+	
+	void exit() {
+		System.exit(0);
+	}
+	
+	
 	boolean allowAccess(String enteredPin) {
 		if(enteredPin.equals(requiredPin)) {
 			return true;
